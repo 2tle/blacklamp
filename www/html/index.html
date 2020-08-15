@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>blacklamp - lampstudio api docs</title>
+        <style>
+            body {
+                text-align:center;
+            }
+            .group {
+                padding : 2em 0 2em 0;
+            }
+            .group-title {
+                font-size: 2em;
+                padding : 1rem 0 1rem 0;
+            }
+            .asdf {
+                padding : 1rem 0 1rem 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="contaier">
+                <div class="title">
+                    <h1>lampstudio api docs</h1>
+                </div>
+                <div class="group">
+                    <div class="group-title">
+                        Profile
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/api/v1/profile
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>username</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+		<div class="group">
+                    <div class="group-title">
+                        ProfileWithGoogleid
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/api/v1/profileWithGoogleid
+                            </span>
+                        </div>
+
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>googleid</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group-title">
+                        PartyPost (GET)
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/api/v1/ppost
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        PartyPost (POST)
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                POST
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/api/v1/ppost
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>googleid</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>username</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>title</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>type</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>link</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        JWT 변환 
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                POST
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/auth/JWTdecode
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>jwt</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                             
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group">
+                    <div class="group-title">
+                        Discord 연결
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/discord
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>ownerid</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>joinid</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>discord</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        isAlreadySignup
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/auth/isAlreadySignup
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>googleid</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        isAlreadyUsedUsername
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                GET
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/auth/isAlreadyUsedUsername
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>username</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="group-title">
+                        signup
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                POST
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/auth/signup
+                            </span>
+                        </div>
+                        
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>googleid</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>username</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>email</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>lol</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>ow</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>pubg</th>
+                                        <th>body(post)</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+		
+		 <div class="group">
+                    <div class="group-title">
+                        gameUsername
+                    </div>
+                    <div class="group-mid">
+                        <div class="asdf">
+                            <span class="method">
+                                PATCH
+                            </span>
+                            <span class="link">
+                                https://api.lampstudio.xyz/api/v1/gameUsername
+                            </span>
+                        </div>
+
+                        <div class="parameter">
+                            <table class="table qr">
+                                <thead>
+                                    <tr>
+                                        <th scope='col'>자료형</th>
+                                        <th scope='col'>이름</th>
+                                        <th scope='col'>파라미터 방식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>api_key</th>
+                                        <th>query</th>
+                                    </tr>
+                                    <tr>
+                                        <th>string</th>
+                                        <th>googleid</th>
+                                        <th>body</th>
+                                    </tr>
+				    <tr>
+                                        <th>string</th>
+                                        <th>ow</th>
+                                        <th>body</th>
+                                    </tr>
+				    <tr>
+                                        <th>string</th>
+                                        <th>lol</th>
+                                        <th>body</th>
+                                    </tr>
+				    <tr>
+                                        <th>string</th>
+                                        <th>pubg</th>
+                                        <th>body</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
