@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <meta name="google-signin-scope" content="profile email">
-        <meta name="google-signin-client_id" content="246699693811-drb51542flv37ae1q8tttpt6e1v2oc72.apps.googleusercontent.com">
+        <meta name="google-signin-client_id" content="">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <link rel="shortcut icon" href="./img/icon.ico">
         <link rel="icon" href="./img/icon.ico">
@@ -109,7 +109,7 @@
                     $email_s = substr($email_f[0],0,1);
                     echo '<span style="float:right;">'.$email_s."*********".'<span>';
                     echo '</div><br>';
-                    $con = new mysqli("localhost",'root','ieelte1214',"user_db");
+                    $con = new mysqli("localhost",'','',"user_db");
                     $query = "SELECT * FROM lol_tb WHERE googleid='".$_SESSION['gid']."'";
                     $result = mysqli_query($con,$query);
                     while($row = mysqli_fetch_array($result)) {
