@@ -13,7 +13,7 @@ if($vcode != $md5vcode) {
     echo "<script>alert('인증코드 미일치.')</script>";
     echo "<script>document.location.href='http://blacklamp.lampstudio.xyz/dashboard-admin/';</script>";
 } else {
-    $con = new mysqli("localhost","root","ieelte1214",$dbname);
+    $con = new mysqli("localhost","root","",$dbname);
     if(!$con) {
         echo "<script>alert('DB연결 실패. DB확인을 위해 서버 관리자에게 문의해주세요.')</script>";
         echo "<script>document.location.href='http://blacklamp.lampstudio.xyz/dashboard-admin/dashboard.php';</script>";
