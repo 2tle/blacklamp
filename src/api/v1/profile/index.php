@@ -12,7 +12,7 @@ $ow_dealer_tier = "";
 $ow_tanker_tier = "";
 $ow_healer_tier = "";
 
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 if(!$con) {
     echo json_encode(array('status' => 500));
 } else {
