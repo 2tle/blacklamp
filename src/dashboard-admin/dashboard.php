@@ -24,7 +24,7 @@
         } else {
             $aid = $_POST['aid'];
             $apw = md5($_POST['apw']);
-            $admin_db_con = new mysqli("localhost","root","ieelte1214","admin_db");
+            $admin_db_con = new mysqli("localhost","root","","admin_db");
             $query = "select * from admin_account_tb where aid='$aid'";
             $result = $admin_db_con->query($query);
             if(mysqli_num_rows($result)==1) {
@@ -59,7 +59,7 @@
             }
             echo "<span class='username'>".$_SESSION['aname']."님 접속 </span></div>";
 
-            $userdb_con = new mysqli("localhost","root","ieelte1214","user_db");
+            $userdb_con = new mysqli("localhost","root","","user_db");
             $query = "SELECT COUNT(*) FROM user_tb";
 	        $user_db_count_result = mysqli_query($userdb_con,$query);
 	        $upon1 = mysqli_fetch_array($user_db_count_result);
