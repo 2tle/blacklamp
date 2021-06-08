@@ -3,7 +3,7 @@ $rnme = $_POST['rnme'];
 $googleid = "";
 $vcode = md5($_POST['vcode']);
 $md5vcode ="";
-$cccon = new mysqli("localhost","root","ieelte1214","admin_db");
+$cccon = new mysqli("localhost","root","","admin_db");
 $nq = "SELECT * from verification_code";
 $nresult = mysqli_query($cccon,$nq);
 while($nrow = mysqli_fetch_array($nresult)) {
@@ -13,7 +13,7 @@ if($vcode != $md5vcode) {
     echo "<script>alert('인증코드 미일치.')</script>";
     echo "<script>document.location.href='http://blacklamp.lampstudio.xyz/dashboard-admin/';</script>";
 } else {
-    $con = new mysqli("localhost","root","ieelte1214","user_db");
+    $con = new mysqli("localhost","root","","user_db");
     $result = mysqli_query($con,"SELECT * FROM user_tb WHERE username='$rnme'");
     while($row = mysqli_fetch_array($result)) {
         $googleid = $row['googleid'];
