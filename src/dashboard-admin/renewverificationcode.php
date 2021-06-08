@@ -6,7 +6,7 @@ $newvcodet = $_POST['vcode4'];
 $sqlvcode_md5 = ""; 
 
 if(($oldvcode == $oldvcodet) and ($newvcode == $newvcodet)) {
-    $con = new mysqli("localhost","root","ieelte1214","admin_db");
+    $con = new mysqli("localhost","root","","admin_db");
     $query = "SELECT * from verification_code";
     $result = mysqli_query($con,$query);
     while($row = mysqli_fetch_array($result)) {
