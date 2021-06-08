@@ -1,5 +1,5 @@
 <?php
-$con = new mysqli("localhost","root","ieelte1214","admin_db");
+$con = new mysqli("localhost","root","","admin_db");
 $aidc = $_POST['aidc'];
 $apwc = md5($_POST['apwc']);
 $anmc = $_POST['anmc'];
