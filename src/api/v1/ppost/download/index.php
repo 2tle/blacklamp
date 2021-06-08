@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=UTF-8');
 
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 if(!$con) {
     echo json_encode(array('status' => 500));
     return;
