@@ -14,7 +14,7 @@
             <?php
 $vcode = md5($_POST['vcode']);
 $md5vcode ="";
-$cccon = new mysqli("localhost","root","ieelte1214","admin_db");
+$cccon = new mysqli("localhost","root","","admin_db");
 $nq = "SELECT * from verification_code";
 $nresult = mysqli_query($cccon,$nq);
 while($nrow = mysqli_fetch_array($nresult)) {
@@ -24,7 +24,7 @@ if($vcode != $md5vcode) {
     echo "<script>alert('인증코드 미일치.')</script>";
     echo "<script>document.location.href='http://blacklamp.lampstudio.xyz/dashboard-admin/';</script>";
 } else {
-    $con = new mysqli("localhost","root","ieelte1214","user_db");
+    $con = new mysqli("localhost","root","","user_db");
     $query = "SELECT * from partypost_tb";
     $result = mysqli_query($con,$query);
     echo "<table class='table'><thead class='thead-dark'><tr><th scope='col'>Index</th><th scope='col'>GoogleID</th><th scope='col'>Username</th><th scope='col'>Gametype</th><th scope='col'>Title</th><th scope='col'>Address</th><th scope='col'>UserTier</th></tr></thead><tbody>";
