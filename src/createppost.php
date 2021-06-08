@@ -15,7 +15,7 @@ if(!$ptitle){
     echo "<script>document.location.href='https://blacklamp.lampstudio.xyz';</script>";
     exit;
 }
-$con = new mysqli("localhost","root",'ieelte1214',"user_db");
+$con = new mysqli("localhost","",'',"user_db");
 if(!$con) {
     echo "<script>alert('데이터베이스 연결 실패. 관리자에게 문의하세요.')</script>";
     echo "<script>document.location.href='https://blacklamp.lampstudio.xyz';</script>";
