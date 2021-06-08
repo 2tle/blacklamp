@@ -2,12 +2,12 @@
 $pubg_seasonid = 'division.bro.official.pc-2018-06';
 $pubg_get_accountid = 'https://api.pubg.com/shards/steam/players?filter[playerNames]=';
 
-$api_key = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmZmUyYzljMC1lZmUzLTAxMzctNzY1Ny0wNTFmMTM0M2QyZGIiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTc0NDg4NjI0LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6ImJsYWNrbGFtcCJ9.KRdhagPxFa8WZ62KDPR2PCD5RDEBuTYKDpIaQM62VkA';
+$api_key = '';
 $headers = [
     "Authorization: Bearer ".$api_key,
     "Accept: application/vnd.api+json"
 ];
-$con = new mysqli('localhost','root','ieelte1214','user_db');
+$con = new mysqli('localhost','root','','user_db');
 if(!$con) {
     exit;
 }
