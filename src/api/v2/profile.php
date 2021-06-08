@@ -11,7 +11,7 @@ if(empty($api_key) or empty($username) or empty($clientid)) {
     insertApiLog($clientid,"Profile Request",$request_name,$api_key,"400 Bad Request");
     exit;
 }
-$api_con = new mysqli("localhost","root","ieelte1214","api_db");
+$api_con = new mysqli("localhost","root","","api_db");
 $query = "SELECT * FROM api_key_tb WHERE api_key_md5='".$api_key."'";
 $result = mysqli_query($api_con,$query);
 if(mysqli_num_rows($result) != 1){
@@ -25,7 +25,7 @@ while($row = mysqli_fetch_array($result)) {
     $request_name = $row['name'];
 }
 mysqli_close($api_con);
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 if(!$con){
     header("HTTP/1.1 500 Internal Server Error");
     header("Request-Name: ".$request_name);
@@ -71,7 +71,7 @@ while($row = mysqli_fetch_array($result)){
     $lol_arr['team'] = $row['lol_team_tier'];
     $urc = str_replace(" ","",$lol_arr['username']);
     $urc = urlencode($urc);
-    $lol_apikey = "RGAPI-47c561bc-530a-4cd4-9c55-47f8cd50c7e4";
+    $lol_apikey = "";
     $url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/".$urc."?api_key=".$lol_apikey;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
