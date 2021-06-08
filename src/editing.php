@@ -8,7 +8,7 @@ $ow = $_POST['ow_username'];
 $lol = $_POST['lol_username'];
 $pubg = $_POST['pubg_username'];
 $gid = $_SESSION['gid'];
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","","","user_db");
 if(!$con) {
     echo "<script>alert('서버가 불안정합니다.');</script>";
     echo "<script>document.location.href='https://blacklamp.lampstudio.xyz';</script>";
