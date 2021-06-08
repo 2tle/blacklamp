@@ -15,7 +15,7 @@
 $vcode = md5($_POST['vcode']);
 $count = 0;
 $md5vcode ="";
-$cccon = new mysqli("localhost","root","ieelte1214","admin_db");
+$cccon = new mysqli("localhost","root","","admin_db");
 $nq = "SELECT * from verification_code";
 $nresult = mysqli_query($cccon,$nq);
 while($nrow = mysqli_fetch_array($nresult)) {
@@ -26,7 +26,7 @@ if($vcode != $md5vcode) {
     echo "<script>alert('인증코드 미일치.')</script>";
     echo "<script>document.location.href='http://blacklamp.lampstudio.xyz/dashboard-admin/';</script>";
 } else {
-    $con = new mysqli("localhost","root","ieelte1214","user_db");
+    $con = new mysqli("localhost","root","","user_db");
     $query = "SELECT * from user_tb";
     $result = mysqli_query($con,$query);
     echo "<table class='table'><thead class='thead-dark'><tr><th scope='col'>#</th><th scope='col'>GoogleID</th><th scope='col'>eMail</th><th scope='col'>Username</th><th scope='col'>LampPoint</th><th scope='col'>OW_username</th><th scope='col'>OW_Tank_tier</th><th scope='col'>OW_Deal_tier</th><th scope='col'>OW_Heal_tier</th><th scope='col'>LOL_Username</th><th scope='col'>LOL_Solo_Tier</th><th scope='col'>LOL_Team_tier</th><th scope='col'>PUBG_Username</th><th scope='col'>PUBG_SOLO_tier</th><th scope='col'>PUBG_DUO_tier</th><th scope='col'>PUBG_SQUAD_tier</th></tr></thead><tbody>";
