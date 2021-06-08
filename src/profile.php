@@ -63,7 +63,7 @@
             $lol_name = "";
             
            
-            $con = new mysqli("localhost","root","ieelte1214","user_db");
+            $con = new mysqli("localhost","","","user_db");
             if(!$con) {
                 echo "<div class='alert alert-danger' role='alert'>서버 연결 오류. 새로고침 해주세요.</div>";
             } else {
