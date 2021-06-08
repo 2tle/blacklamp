@@ -1,6 +1,6 @@
 #!/usr/bin/php -q
 <?php
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 //LoL Update
 $query = "SELECT * FROM lol_tb";
 $result = mysqli_query($con,$query);
@@ -9,7 +9,7 @@ while($row = mysqli_fetch_array($result)){
     $username = $row['lol_username'];
     $username = str_replace(" ","",$username);
     $username = urlencode($username);
-    $api_key = "RGAPI-47c561bc-530a-4cd4-9c55-47f8cd50c7e4";
+    $api_key = "";
     $url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/".$username."?api_key=".$api_key;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
