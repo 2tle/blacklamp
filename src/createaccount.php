@@ -11,7 +11,7 @@ $pubg_username = $_POST['pubg_username'];
 $lol_username = $_POST['lol_username'];
 $googleid = $_SESSION['gid'];
 $email = $_SESSION['email'];
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","","","user_db");
 if(!$con) {
     echo "<script>alert('데이터베이스 접속 오류.');</script>";
     echo "<script>document.location.href='https://blacklamp.lampstudio.xyz/signup';</script>";
