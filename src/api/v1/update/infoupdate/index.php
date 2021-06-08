@@ -6,7 +6,7 @@ $pubgname = $_GET['pubgname'];
 $lolname = $_GET['lolname'];
 $cnt = 0;
 
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 
 $var = "UPDATE ow_tb SET ow_username='$owname' WHERE googleid='$googleid'";
 $result = mysqli_query($con,$var);
