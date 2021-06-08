@@ -2,7 +2,7 @@
 $vcode = md5($_POST['vcode']);
 $queryValue = $_POST['query'];
 $dbname = $_POST['dbname'];
-$cccon = new mysqli("localhost","root","ieelte1214","admin_db");
+$cccon = new mysqli("localhost","root","","admin_db");
 $md5vcode ="";
 $nq = "SELECT * from verification_code";
 $nresult = mysqli_query($cccon,$nq);
