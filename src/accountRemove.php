@@ -11,7 +11,7 @@ if($_POST['gid'] != $_SESSION['email']) {
     exit;
 }
 
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","","","user_db");
 if(!$con){
     echo "<script>alert('서버 오류. 다시 시도하여 주세요.');</script>";
     echo "<script>document.location.href='https://blacklamp.lampstudio.xyz/my';</script>";
