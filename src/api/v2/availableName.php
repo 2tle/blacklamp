@@ -13,7 +13,7 @@ if(empty($api_key) or empty($clientid)) {
     
 }
 
-$api_con = new mysqli("localhost","root","ieelte1214","api_db");
+$api_con = new mysqli("localhost","root","","api_db");
 $query = "SELECT * FROM api_key_tb WHERE api_key_md5='".$api_key."'";
 $result = mysqli_query($api_con,$query);
 if(mysqli_num_rows($result) != 1){
@@ -29,7 +29,7 @@ while($row = mysqli_fetch_array($result)) {
 }
 mysqli_close($api_con);
 
-$con = new mysqli("localhost","root","ieelte1214","user_db");
+$con = new mysqli("localhost","root","","user_db");
 if(!$con){
     header("HTTP/1.1 500 Internal Server Error");
     header("Request-Name: ".$request_name);
