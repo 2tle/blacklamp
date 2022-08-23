@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="/css/callout.css">
+        <title>Blacklamp Profile <%= username%></title>
+        <style>
+            .container { 
+                text-align : center; 
+                padding : 2em 0  0 0;
+            }
+            .wrap { padding : 2em 0 2em 0;}
+            .bd-title {
+                font-size : 1.3em;
+                font-weight : bold;
+                text-align:left;
+            }
+            .bd-tier {
+                text-align:left;
+            }
+            .wrap {
+                padding : 0.5rem;
+            }
+	    .bd-callout { background : white; }
+        </style>
+    </head>
+    <body style="background-color : #e9ecef;">
+        
+        <div class="wrapper">
+            
+            <div class="container">
+                <div class="logo">
+                    <img src="/img/blacklamp.png" style="width:150px;height:150px;">
+                </div>
+                <div class="wrap">
+                    <div class="bd-callout bd-callout-secondary">
+                        <div class="bd-title">기본정보</div>
+                        <div class="bd-tier">
+                            유저네임 : <%= username%>
+                        </div>
+                        <div class="bd-tier">
+                            램프 포인트 : <%= lamppoint%>
+                        </div>
+                    </div>
+                    <div class="bd-callout bd-callout-info">
+                        <div class="bd-title">롤 : <%=lol_username%></div>
+                        <div class="bd-tier">
+                            솔랭 : <%= lol_solo_tier%>
+                        </div>
+                        <div class="bd-tier">
+                            자랭 : <%= lol_team_tier%>
+                        </div>
+                    </div>
+                    <div class="bd-callout bd-callout-warning">
+                        <div class="bd-title">오버워치 : <%=ow_username%></div>
+                        <div class="bd-tier">
+                            탱커 : <%= ow_tanker_tier%>
+                        </div>
+                        <div class="bd-tier">
+                            딜러 : <%= ow_dealer_tier%>
+                        </div>
+                        <div class="bd-tier">
+                            힐러 : <%= ow_healer_tier%>
+                        </div>
+                    </div>
+                    <div class="bd-callout bd-callout-danger">
+                        <div class="bd-title">배틀그라운드 : <%=pubg_username%></div>
+                        <div class="bd-tier">
+                            솔로 : <%= pubg_solo_tier%>
+                        </div>
+                        <div class="bd-tier">
+                            듀오 : <%= pubg_duo_tier%>
+                        </div>
+                        <div class="bd-tier">
+                            스쿼드 : <%= pubg_squad_tier%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/profile.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

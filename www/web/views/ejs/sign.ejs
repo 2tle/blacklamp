@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.sign.css">
+        <title>Blacklamp</title>
+    </head>
+    <body style="background-color : #e9ecef;">
+        <div class="wrapper">
+            <div class="container">
+                <div class="page">
+                    <div class="login-page">
+                        <div class="login-wrap">
+                            <div class="login-title">
+                                <img src="/img/blacklamp.png">
+                            </div>
+                            <div class="form">
+                                <div class="inputgroup idinput">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-default">E-Mail</span>
+                                        </div>
+                                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email">
+                                    </div>
+                                </div>
+                                <div class="inputgroup pwinput">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-default">PW</span>
+                                        </div>
+                                        <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="pw">
+                                    </div>
+                                </div>
+                                <div class="inputgroup btninput">
+                                    <button class="btn btn-block btn-lg btn-outline-primary" onclick="login();">로그인</button>
+                                </div>
+                                
+                                <div>
+                                    <hr style="width : 80%; color: black; text-align:center;">
+                                </div>
+                                
+                                <div class="inputgroup btninput">
+                                    <button class="btn btn-block btn-lg btn-outline-danger" onclick="signup();">회원가입</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <script src="/js/sign.js">
+            
+        </script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
